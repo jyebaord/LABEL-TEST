@@ -95,7 +95,7 @@ if uploaded_file is not None:
         p.add_run(f"{qty_display}\n")
         p.add_run("捷寶出貨單號: ").bold = True
         p.add_run(f"{doc_no}\n")
-        p.add_paragraph("-" * 40)
+        doc.add_paragraph("-" * 40)  # <-- 修正此處
 
       # 儲存至記憶體緩衝區
       buffer = io.BytesIO()
